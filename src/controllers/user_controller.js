@@ -58,7 +58,7 @@ module.exports = {
     },
     login: async (req, res) => {
         try {
-            const result = await user_model.findOne({ email: req.body.username, password: req.body.password })
+            const result = await user_model.findOne({ username: req.body.username, password: req.body.password })
             res.status(200).send(result)
         }
         catch (error) {
