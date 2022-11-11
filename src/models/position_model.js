@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const cargo_model = new mongoose.Schema({
+const position_model = new mongoose.Schema({
     id: {
         type: String,
         required: true,
@@ -12,4 +12,4 @@ const cargo_model = new mongoose.Schema({
     }
 })
    
-module.exports = mongoose.model("Cargo", cargo_model)
+module.exports = mongoose.model("position", position_model)

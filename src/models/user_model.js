@@ -28,4 +28,4 @@ const student_model = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model("Event", student_model)
+module.exports = mongoose.model("student", student_model)

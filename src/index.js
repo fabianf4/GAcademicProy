@@ -16,6 +16,7 @@ app.use(express.json())
 require("./drivers/mongoose_driver")
 
 app.use("/activities", require("./routers/activities_router"))
+app.use("/position", require("./routers//position_router"))
 
 app.get('/',(req,res)=>{
     res.send("Api is running")
