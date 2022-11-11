@@ -18,6 +18,7 @@ require("./drivers/mongoose_driver")
 app.use("/activities", require("./routers/activities_router"))
 app.use("/position", require("./routers//position_router"))
 app.use("/user", require("./routers/user_router"))
+app.use("/matter", require("./routers/matter_router"))
 
 app.get('/',(req,res)=>{
     res.send("Api is running")
