@@ -6,7 +6,7 @@ const student_model = new mongoose.Schema({
     required: true,
     unique: true
   },
-  user:{
+  username:{
     type:String,
     required:true
   },
