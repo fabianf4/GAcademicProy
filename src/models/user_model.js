@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const student_model = new mongoose.Schema({
+const user_model = new mongoose.Schema({
   uuid: {
     type: String,
     required: true,
@@ -28,4 +28,4 @@ const student_model = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model("student", student_model)
+module.exports = mongoose.model("user", user_model)
