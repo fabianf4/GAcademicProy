@@ -10,10 +10,6 @@ const matter_model = new mongoose.Schema({
         type: String,
         required: true
     },
-    description: {
-        type: String,
-        required: true
-    },
     credits: {
         type: Number,
         required: true
