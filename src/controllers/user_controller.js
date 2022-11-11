@@ -29,6 +29,15 @@ module.exports = {
             res.status(500).send(error)
         }
     },
+    getUserByUUID: async (uuid) => {
+        try {
+            const result = await user_model.findOne({ uuid: uuid })
+            res.status(200).send(result)
+        }
+        catch (error) {
+            res.status(500).send(error)
+        }
+    },
     updateUser: async (req, res) => {
         try {
             const result = await user_model.findByIdAndUpdate(req.params.id, req.body)

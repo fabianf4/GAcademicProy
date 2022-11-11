@@ -23,7 +23,7 @@ const student_model = new mongoose.Schema({
     required: true
   },
   position: {
-    type: String,
+    type: mongoose.ObjectId,
     required: true
   }
 })
