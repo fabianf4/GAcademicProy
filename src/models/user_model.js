@@ -22,7 +22,7 @@ const student_model = new mongoose.Schema({
     type: String,
     required: true
   },
-  cargo: {
+  position: {
     type: String,
     required: true
   }
