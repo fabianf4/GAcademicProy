@@ -29,7 +29,7 @@ module.exports = {
             res.status(500).send(error)
         }
     },
-    getUserByUUID: async (uuid) => {
+    getUserByUUID: async (req, res) => {
         try {
             const result = await user_model.findOne({ uuid: uuid })
             res.status(200).send(result)
