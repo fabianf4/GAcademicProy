@@ -31,7 +31,7 @@ module.exports = {
     },
     getUserByUUID: async (req, res) => {
         try {
-            const result = await user_model.findOne({ uuid: uuid })
+            const result = await user_model.findOne({ uuid: req.params.uuid })
             res.status(200).send(result)
         }
         catch (error) {
