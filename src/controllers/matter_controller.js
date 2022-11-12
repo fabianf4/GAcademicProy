@@ -41,5 +41,18 @@ module.exports = {
         } catch (error) {
             res.status(500).send(error)
         }
+    },
+    addActivityToMatter: async (req, res) => {
+        try {
+            const result = await matter_model
+                .findByIdAndUpdate(req.params.id, {
+                    $push: {
+                        activities: req.body.activity
+                    }
+                })
+            res.status(200).send(result)
+        } catch (error) {
+            res.status(500).send(error)
+        }
     }
 }

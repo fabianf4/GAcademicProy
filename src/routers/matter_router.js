@@ -8,5 +8,6 @@ router.get("/get", matter_controller.getMatter)
 router.get("/get/:id", matter_controller.getMatterById)
 router.put("/update/:id", matter_controller.updateMatter)
 router.delete("/delete/:id", matter_controller.deleteMatter)
+router.put("/addActivity/:id", matter_controller.addActivityToMatter)
 
 module.exports = router;

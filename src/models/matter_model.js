@@ -18,11 +18,15 @@ const matter_model = new mongoose.Schema({
         type: mongoose.ObjectId,
         required: true
     },
-    students: [
-        mongoose.ObjectId
+    students: [{
+        type: mongoose.ObjectId,
+        ref: "user"
+    }
     ],
-    activities: [
-        mongoose.ObjectId
+    activities: [{
+        type: mongoose.ObjectId,
+        ref: "activities"
+    }
     ]
 })
 
