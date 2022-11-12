@@ -14,6 +14,10 @@ const matter_model = new mongoose.Schema({
         type: Number,
         required: true
     },
+    position: {
+        type: mongoose.ObjectId,
+        required: true
+    },
     teacher: {
         type: mongoose.ObjectId,
         required: true
