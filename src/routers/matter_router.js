@@ -9,5 +9,8 @@ router.get("/get/:id", matter_controller.getMatterById)
 router.put("/update/:id", matter_controller.updateMatter)
 router.delete("/delete/:id", matter_controller.deleteMatter)
 router.put("/addActivity/:id", matter_controller.addActivityToMatter)
+router.put("/addStudent/:id", matter_controller.addStudentToMatter)
+router.get("/getWithActivities/:id", matter_controller.getMatterWithActivities)
+router.get("/getWithStudents/:id", matter_controller.getMatterWithStudents)
 
 module.exports = router;
